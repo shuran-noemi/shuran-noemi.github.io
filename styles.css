@@ -354,6 +354,8 @@ img {
 .timeline-logo[src$="xjtlu.png"],
 .timeline-logo[src$="thu.jpg"] {
   margin-left: -10px;
+  mix-blend-mode: darken;
+  filter: brightness(0.96) contrast(1.12) saturate(1.04);
 }
 
 .timeline-logo[src$="herlab.ico"],
@@ -794,6 +796,8 @@ img {
   .timeline-logo[src$="xjtlu.png"],
   .timeline-logo[src$="thu.jpg"] {
     margin-left: -8px;
+    mix-blend-mode: darken;
+    filter: brightness(0.96) contrast(1.12) saturate(1.04);
   }
 
   .timeline-logo[src$="herlab.ico"],
