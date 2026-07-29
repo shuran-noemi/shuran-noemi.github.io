@@ -1,0 +1,164 @@
+.hero-grid {
+    width: 100%;
+}
+
+.hero-left {
+    width: 280px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: min(235px, 72vw);
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid rgba(40, 111, 120, 0.18);
+    box-shadow: 10px 10px 0 #d5ebe8, -8px -8px 0 #f7efe3;
+    transform: rotate(-1deg);
+}
+
+.hero-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.hero-kicker {
+    color: #286f78;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.meta-name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: #25312f;
+    line-height: 1.15;
+    position: relative;
+    display: inline-block;
+}
+
+.meta-name::after {
+    content: "";
+    position: absolute;
+    left: 0.08rem;
+    right: 0.08rem;
+    bottom: 0.02rem;
+    height: 0.32rem;
+    background: rgba(139, 191, 186, 0.35);
+    z-index: -1;
+    transform: rotate(-1deg);
+}
+
+.meta-cn {
+    color: #697572;
+    margin-top: 0.28rem;
+    font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.meta-role {
+    margin-top: 1.15rem;
+    color: #53615f;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    background: rgba(248, 253, 252, 0.55);
+    border: 1px solid rgba(40, 111, 120, 0.08);
+}
+
+.meta-role::before,
+.meta-role::after {
+    content: "";
+    width: 0.24rem;
+    height: 0.24rem;
+    border-radius: 50%;
+    background: rgba(139, 191, 186, 0.8);
+}
+
+.meta-role::after {
+    background: #f2b36d;
+}
+
+.meta-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+
+.meta-linkitem {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    min-width: 8.5rem;
+    border-radius: 8px;
+    padding: 0.4rem 0.9rem;
+    background: #e9f7f5;
+    color: #286f78;
+    font-weight: 800;
+    border: 1px solid rgba(40, 111, 120, 0.14);
+}
+
+.meta-linkitem:hover {
+    color: #fff;
+    background: #286f78;
+}
+
+.is-placeholder {
+    cursor: not-allowed;
+}
+
+.contact-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.icon-link {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(40, 111, 120, 0.14);
+    border-radius: 50%;
+    background: #fffdf8;
+    color: #286f78;
+    font-size: 1.05rem;
+}
+
+.icon-link:hover {
+    color: #204f59;
+    transform: translateY(-1px) rotate(-4deg);
+}
+
+.small-text {
+    color: #8a9592;
+    font-size: 0.72rem;
+    margin-top: 0.7rem;
+}
+
+@media (max-width: 900px) {
+    .hero-left {
+        width: 100%;
+    }
+
+    .profile-pic {
+        width: min(210px, 64vw);
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  color: #25312f;
+  line-height: 1.65;
+  scroll-behavior: smooth;
+  font-size: 0.95rem;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+a {
+  color: #286f78;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+a:hover {
+  color: #204f59;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.main-layout {
+  display: flex;
+  flex: 1;
+  margin-top: 56px;
+}
+
+.left-hero {
+  position: fixed;
+  top: 52%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 2rem 8rem;
+  z-index: 5;
+}
+
+.right-content {
+  flex: 1;
+  padding: 2rem 8rem 4rem 10rem;
+  margin-left: 320px;
+}
+
+.right-content > div {
+  max-width: 980px;
+}
+
+div,
+section {
+  scroll-margin-top: 5rem;
+}
+
+.site-credit {
+  margin: 2rem 0 0.5rem;
+  color: #9aa5a2;
+  font-size: 0.72rem;
+  text-align: center;
+}
+
+.site-credit a {
+  color: #697572;
+  border-bottom: 1px solid rgba(105, 117, 114, 0.25);
+}
+
+.site-credit a:hover {
+  color: #286f78;
+}
+
+@media (max-width: 1100px) {
+  .left-hero {
+    padding-left: 2rem;
+  }
+
+  .right-content {
+    padding-right: 3rem;
+    padding-left: 4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-layout {
+    flex-direction: column;
+    margin-top: 58px;
+  }
+
+  .left-hero {
+    position: relative;
+    transform: none;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 0 0;
+  }
+
+  .right-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 0 0 3rem;
+  }
+
+  .right-content > div {
+    margin: 1.25rem !important;
+  }
+}
