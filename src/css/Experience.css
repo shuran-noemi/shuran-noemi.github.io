@@ -202,6 +202,204 @@
   font-weight: 800;
 }
 
+.creator-campaigns {
+  margin: 0.25rem 0 0 1.1rem;
+  padding: 0.72rem 0.8rem 0.78rem;
+  border-radius: 8px;
+  border: 1px dashed rgba(40, 111, 120, 0.18);
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.campaigns-copy {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.48rem;
+}
+
+.campaigns-title {
+  color: #465350;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+.campaigns-copy p {
+  margin: 0;
+  color: #8a9592;
+  font-size: 0.73rem;
+  line-height: 1.45;
+  text-align: right;
+}
+
+.campaign-partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.34rem;
+  margin: 0 0 0.58rem;
+}
+
+.campaign-partner-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.8rem;
+  height: 2.25rem;
+  padding: 0.3rem 0.46rem;
+  border-radius: 7px;
+  border: 1px solid rgba(40, 111, 120, 0.08);
+  background: rgba(255, 255, 255, 0.58);
+  box-sizing: border-box;
+}
+
+.campaign-partner-logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 1.36rem;
+  object-fit: contain;
+  opacity: 0.78;
+  filter: grayscale(0.18);
+}
+
+.campaign-partner-logo-lenovo img {
+  max-width: 126%;
+  max-height: 126%;
+}
+
+.campaign-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.48rem;
+  align-items: start;
+}
+
+.campaign-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.42rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0.35rem;
+  border-radius: 8px;
+  background: rgba(248, 251, 250, 0.68);
+  border: 1px solid rgba(40, 111, 120, 0.09);
+  overflow: hidden;
+}
+
+.campaign-card + .campaign-card {
+  margin-top: 0;
+}
+
+.campaign-card-portrait {
+  align-self: auto;
+}
+
+.campaign-media {
+  position: relative;
+  width: 100%;
+  height: clamp(8.8rem, 15.8vw, 9.8rem);
+}
+
+.campaign-logo {
+  position: absolute;
+  left: 0.46rem;
+  top: 0.46rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.35rem;
+  height: 1.5rem;
+  padding: 0.2rem 0.32rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  box-shadow: 0 5px 14px rgba(37, 49, 47, 0.1);
+}
+
+.campaign-logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.campaign-logo-samsung-galaxy {
+  width: 5.1rem;
+  height: 1.34rem;
+  padding: 0.1rem 0.18rem;
+}
+
+.campaign-logo-samsung-galaxy img {
+  max-width: 132%;
+  max-height: 132%;
+}
+
+.campaign-logo-oppo {
+  width: 4.55rem;
+  height: 1.46rem;
+  padding: 0.08rem 0.14rem;
+}
+
+.campaign-logo-oppo img {
+  max-width: 158%;
+  max-height: 158%;
+}
+
+.campaign-logo-didi {
+  width: 1.72rem;
+  height: 1.72rem;
+  padding: 0.16rem;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.campaign-image-stack {
+  position: relative;
+  height: 100%;
+}
+
+.campaign-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 3px solid rgba(255, 255, 255, 0.92);
+  box-sizing: border-box;
+  box-shadow: 0 8px 18px rgba(37, 49, 47, 0.1);
+}
+
+.campaign-card-portrait .campaign-image {
+  object-position: center 72%;
+}
+
+.campaign-card-landscape-stack .campaign-image-stack {
+  padding: 0.06rem 0.2rem 0.18rem 0;
+}
+
+.campaign-card-landscape-stack .campaign-image {
+  height: calc((100% + 0.48rem) / 2);
+}
+
+.campaign-card-landscape-stack .campaign-image-1 {
+  transform: rotate(-1.5deg);
+}
+
+.campaign-card-landscape-stack .campaign-image-2 {
+  margin-top: -0.48rem;
+  transform: translateX(0.34rem) rotate(1.4deg);
+}
+
+.campaign-card p {
+  margin: 0;
+  color: #697572;
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
 @media (max-width: 900px) {
   .timeline-container {
     padding-left: 0;
@@ -225,5 +423,49 @@
 
   .exp-period {
     text-align: left;
+  }
+
+  .creator-campaigns {
+    margin-left: 0;
+  }
+
+  .campaigns-copy {
+    display: block;
+  }
+
+  .campaigns-copy p {
+    margin-top: 0.12rem;
+    text-align: left;
+  }
+
+  .campaign-partner-logo {
+    width: 4.35rem;
+  }
+
+  .campaign-showcase {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .creator-campaigns {
+    padding: 0.65rem;
+  }
+
+  .campaign-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .campaign-card {
+    padding: 0.42rem;
+  }
+
+  .campaign-card p {
+    font-size: 0.71rem;
+  }
+
+  .campaign-card-landscape-stack .campaign-image-2 {
+    margin-top: -0.2rem;
+    transform: translateX(0.22rem) rotate(1deg);
   }
 }

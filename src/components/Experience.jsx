@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Experience.css";
-import { experienceGroups } from "../data/profileData";
+import { creatorCampaigns, experienceGroups } from "../data/profileData";
 
 export default function Experience() {
   return (
@@ -76,6 +76,52 @@ export default function Experience() {
                 </article>
               ))}
             </div>
+            {group.title === "Work Experience" && creatorCampaigns && (
+              <div className="creator-campaigns" aria-label={creatorCampaigns.title}>
+                <div className="campaigns-copy">
+                  <div className="campaigns-title">{creatorCampaigns.title}</div>
+                  <p>{creatorCampaigns.note}</p>
+                </div>
+
+                <div className="campaign-partner-logos" aria-label="Additional campaign partner brands">
+                  {creatorCampaigns.partnerLogos.map((logo) => (
+                    <div
+                      key={logo.name}
+                      className={`campaign-partner-logo campaign-partner-logo-${logo.name.toLowerCase().replace(/\s+/g, "-")}`}
+                      title={logo.name}
+                    >
+                      <img src={logo.src} alt={logo.name} />
+                    </div>
+                  ))}
+                </div>
+
+                <div className="campaign-showcase">
+                  {creatorCampaigns.items.map((campaign) => (
+                    <article
+                      key={campaign.brand}
+                      className={`campaign-card campaign-card-${campaign.layout}`}
+                    >
+                      <div className="campaign-media">
+                        <div className={`campaign-logo campaign-logo-${campaign.brand.toLowerCase().replace(/\s+/g, "-")}`}>
+                          <img src={campaign.logo} alt={`${campaign.brand} logo`} />
+                        </div>
+                        <div className="campaign-image-stack">
+                          {campaign.images.map((image, imageIndex) => (
+                            <img
+                              key={`${campaign.brand}-${imageIndex}`}
+                              src={image}
+                              alt=""
+                              className={`campaign-image campaign-image-${imageIndex + 1}`}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                      <p>{campaign.description}</p>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         ))}
       </div>

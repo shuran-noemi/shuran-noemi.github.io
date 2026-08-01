@@ -14,6 +14,22 @@ import appleThree from "../assets/activity/a1_3.JPG";
 import appleFour from "../assets/activity/a1_4.jpg";
 import forumOne from "../assets/activity/a2_1.JPG";
 import forumTwo from "../assets/activity/a2_2.JPG";
+import samsungLogo from "../assets/campaign/Font-Samsung-Logo.jpg";
+import galaxyCampaign from "../assets/campaign/Galaxy.JPG";
+import oppoLogo from "../assets/campaign/Oppo-Logo.wine.svg";
+import oppoCampaignOne from "../assets/campaign/OPPO1.JPG";
+import oppoCampaignTwo from "../assets/campaign/OPPO2.JPG";
+import didiLogo from "../assets/campaign/didi logo.png";
+import didiCampaignOne from "../assets/campaign/didi_2.jpg";
+import didiCampaignTwo from "../assets/campaign/didi_3.jpg";
+import byteDanceLogo from "../assets/campaign/logos/ByteDance_logo_English.svg";
+import hpLogo from "../assets/campaign/logos/HP_logo_630x630.png";
+import huaweiLogo from "../assets/campaign/logos/Huawei_Standard_logo.svg.webp";
+import meituanLogo from "../assets/campaign/logos/Meituan-美团-Logo.png";
+import nvidiaLogo from "../assets/campaign/logos/Nvidia-Logo.wine.png";
+import tencentLogo from "../assets/campaign/logos/Tencent logo.png";
+import vivoLogo from "../assets/campaign/logos/Vivo-Logo.png";
+import lenovoLogo from "../assets/campaign/logos/lenovo logo.png";
 
 export const profile = {
   name: "Shuran Fan",
@@ -168,6 +184,47 @@ export const experienceGroups = [
     items: experiences.filter((item) => item.category === "Work Experience"),
   },
 ];
+
+export const creatorCampaigns = {
+  title: "Creator Partnerships",
+  note: "Participated as a creator partner in commercial collaborations and communication campaigns with leading brands.",
+  partnerLogos: [
+    { name: "ByteDance", src: byteDanceLogo },
+    { name: "HP", src: hpLogo },
+    { name: "Huawei", src: huaweiLogo },
+    { name: "Meituan", src: meituanLogo },
+    { name: "NVIDIA", src: nvidiaLogo },
+    { name: "Tencent", src: tencentLogo },
+    { name: "vivo", src: vivoLogo },
+    { name: "Lenovo", src: lenovoLogo },
+  ],
+  items: [
+    {
+      brand: "Samsung Galaxy",
+      logo: samsungLogo,
+      layout: "portrait",
+      images: [galaxyCampaign],
+      description:
+        "Led the Samsung Galaxy S Series summer campaign, driving topics to 10M+ views and trending on both Weibo and Douyin.",
+    },
+    {
+      brand: "OPPO",
+      logo: oppoLogo,
+      layout: "landscape-stack",
+      images: [oppoCampaignOne, oppoCampaignTwo],
+      description:
+        "Joined Reno and Find series launches and co-creation meetings as a creator guest, leading campus communications.",
+    },
+    {
+      brand: "DiDi",
+      logo: didiLogo,
+      layout: "landscape-stack",
+      images: [didiCampaignOne, didiCampaignTwo],
+      description:
+        "Contributed to an S-tier social video campaign, directing and creating an episode with 1M+ views.",
+    },
+  ],
+};
 
 export const activities = [
   {
