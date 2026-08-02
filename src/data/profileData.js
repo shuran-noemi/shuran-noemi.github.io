@@ -22,6 +22,8 @@ import oppoCampaignTwo from "../assets/campaign/OPPO2.JPG";
 import didiLogo from "../assets/campaign/didi logo.png";
 import didiCampaignOne from "../assets/campaign/didi_2.jpg";
 import didiCampaignTwo from "../assets/campaign/didi_3.jpg";
+import alibabaLogo from "../assets/campaign/logos/alibaba.png";
+import appleLogoBlack from "../assets/campaign/logos/Apple_logo_black.svg";
 import byteDanceLogo from "../assets/campaign/logos/ByteDance_logo_English.svg";
 import hpLogo from "../assets/campaign/logos/HP_logo_630x630.png";
 import huaweiLogo from "../assets/campaign/logos/Huawei_Standard_logo.svg.webp";
@@ -189,6 +191,8 @@ export const creatorCampaigns = {
   title: "Creator Partnerships",
   note: "Participated as a creator partner in commercial collaborations and communication campaigns with leading brands.",
   partnerLogos: [
+    { name: "Alibaba", src: alibabaLogo },
+    { name: "Apple", src: appleLogoBlack },
     { name: "ByteDance", src: byteDanceLogo },
     { name: "HP", src: hpLogo },
     { name: "Huawei", src: huaweiLogo },
