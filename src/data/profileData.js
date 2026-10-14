@@ -43,15 +43,9 @@ export const profile = {
   profilePhoto,
   links: [
     { label: "Email", href: "mailto:shuran@whu.edu.cn", type: "email" },
-    { label: "GitHub", href: "#", type: "github", placeholder: true },
     { label: "Google Scholar", href: "#", type: "scholar", placeholder: true },
-    { label: "LinkedIn", href: "#", type: "linkedin", placeholder: true },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/shuran-fan-213943324", type: "linkedin" },
   ],
-  cv: {
-    label: "CV (2026.7)",
-    href: "#",
-    placeholder: true,
-  },
 };
 
 export const news = [
