@@ -43,7 +43,7 @@ export default function Publications() {
       <div className="publications-list">
         {filteredPublications.map((paper) => (
           <article key={paper.id} className="publication-card" id={paper.id}>
-            <img src={paper.image} alt={paper.title} className="publication-image" />
+            <img src={paper.image} alt={paper.title} className={`publication-image${paper.venues.some((venue) => venue.type === "work-in-progress") ? " publication-image-wip" : ""}`} />
 
             <div className="publication-content">
               <div className="publication-venue">
@@ -72,14 +72,14 @@ export default function Publications() {
                 })}
               </div>
 
-              <div className="publication-venue-detail">{paper.venueDetail}</div>
-              <div className="publication-links">
+              {paper.venueDetail && <div className="publication-venue-detail">{paper.venueDetail}</div>}
+              {paper.links.length > 0 && <div className="publication-links">
                 {paper.links.map((link) => (
                   <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer">
                     {link.label}
                   </a>
                 ))}
-              </div>
+              </div>}
 
               <div className="publication-tags">
                 {paper.tags.map((tag) => (

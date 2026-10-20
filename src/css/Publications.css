@@ -74,6 +74,14 @@
     background-color: #8bbfba;
 }
 
+.venue-tag.work-in-progress {
+    background-color: #909090;
+}
+
+.publication-image-wip {
+    object-fit: cover;
+}
+
 .publication-title-wrapper {
     position: relative;
     display: inline-block;

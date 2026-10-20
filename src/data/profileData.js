@@ -1,3 +1,7 @@
+import paperPecsi from "../assets/paperimage/pecsi.jpg";
+import paperContentToExperience from "../assets/paperimage/content2e.png";
+import paperTeleoperation from "../assets/paperimage/teleoperation.png";
+import paperDelegatedAccess from "../assets/paperimage/delegated-access.png";
 import profilePhoto from "../assets/profile.jpg";
 import paperBird from "../assets/paperimage/paper1.png";
 import paperMuseum from "../assets/paperimage/paper2.png";
@@ -98,6 +102,166 @@ export const publications = [
     tags: ["UX Design", "Understanding People"],
     abstract:
       "Museums increasingly collect user-generated content (UGC), yet such materials are often presented as fragmented messages of visitors' voluntary expressions. Prior work suggests that encountering others’ perspectives can prompt reflection and dialogue, but it remains unclear how different UGC display approaches shape visitors’ experiences and in-situ expression during a visit. In this work, we distill strategies from prior research into four UGC display modes and design corresponding prototypes as design probes. Through a field study conducted in a museum, we compare how different display approaches influence visitors’ meaning-making and expressive behaviors. Based on our findings, we derive design implications for supporting UGC-driven in-situ expression and offer insights into designing more communicative museum experiences.",
+  },
+  {
+    "id": "parent-learning",
+    "title": "Designing AI Scaffolding for Parent Learning in Live Parent–Child Emotion Coaching",
+    "image": paperPecsi,
+    "authors": [
+      {
+        "name": "Shuran Fan"
+      },
+      {
+        "name": "Ming Chen"
+      },
+      {
+        "name": "Yu Mei"
+      },
+      {
+        "name": "Haoling Bai"
+      },
+      {
+        "name": "Yiduo Xu"
+      },
+      {
+        "name": "Jie Cai",
+        "role": "corresponding"
+      },
+      {
+        "name": "Chun Yu"
+      }
+    ],
+    "venues": [
+      {
+        "name": "Work In Progress",
+        "type": "work-in-progress"
+      }
+    ],
+    "links": [],
+    "tags": [
+      "Human-AI Collaboration",
+      "Understanding People",
+      "System / Prototype"
+    ],
+    "abstract": "Parents struggle to translate emotion coaching principles into appropriate responses during emotionally challenging interactions. Existing real-time AI can address immediate needs, but may not build transferable coaching capabilities. We investigate how AI can support practice while promoting parent learning. A formative study with 10 parents informed PECSI, an AI scaffolding system combining a five-phase emotion-coaching framework with two schedules. We evaluated PECSI in a between-subjects mixed-methods study with 39 Chinese parent–child dyads, using expert-reviewed criteria for behavioral analysis. Both schedules supported initial learning and were perceived as adaptive. Yet the schedules followed distinct learning pathways: repeated situated modeling fostered reusable response templates, whereas progressive fading encouraged active generation and feedback-mediated self-correction. Our findings further explain how live relational interaction reshapes scaffolding and offer design implications for supporting parent learning while preserving relational responsibility."
+  },
+  {
+    "id": "content-to-experience",
+    "title": "Content to Experience: A Multi-Stakeholder Design Framework for Heritage XR Experiences",
+    "image": paperContentToExperience,
+    "authors": [
+      {
+        "name": "Shuran Fan"
+      },
+      {
+        "name": "Qingxuan Yan"
+      },
+      {
+        "name": "Xinyi Fu"
+      },
+      {
+        "name": "Yue Li",
+        "role": "corresponding"
+      }
+    ],
+    "venues": [
+      {
+        "name": "Work In Progress",
+        "type": "work-in-progress"
+      }
+    ],
+    "links": [],
+    "tags": [
+      "Framework / Survey",
+      "Interaction Technology",
+      "Understanding People"
+    ],
+    "abstract": "Extended Reality (XR) offers transformative potential for cultural heritage, but its development must reconcile the conflicting needs of diverse stakeholders. However, existing approaches lack a common way to articulate and compare design decisions across roles. In this work, we present Content to Experience—Narrative, Immersion, Interactivity, and Sociality (C2X-NIIS), a review-derived and stakeholder-refined relational design framework for heritage XR. A theory-informed scoping review of 163 studies describing 178 projects established a design space comprising six dimensions and representative alternatives. A collaborative design workshop and interviews with experienced stakeholders then organized this space into an Input–Mechanics–Target relation and examined its potential uses. The resulting framework connects Content Source to Experiential Goal through Narrative Structure, Immersion, Interactivity, and Sociality. It provides a relational account of how role-specific priorities bear on a shared design configuration and offers formative evidence for future multi-stakeholder use."
+  },
+  {
+    "id": "teleoperation-experience",
+    "title": "How Do We Measure Subjective Experience in Teleoperation? A Scoping Review of Constructs and Measurement Practices",
+    "image": paperTeleoperation,
+    "authors": [
+      {
+        "name": "Duocan Li",
+        "role": "equal"
+      },
+      {
+        "name": "Shuran Fan",
+        "role": "equal"
+      },
+      {
+        "name": "Jiayue Huang"
+      },
+      {
+        "name": "Qian Zhu"
+      },
+      {
+        "name": "Tianren Luo"
+      },
+      {
+        "name": "Hao Zhang"
+      },
+      {
+        "name": "Teng Han"
+      },
+      {
+        "name": "Nianlong Li",
+        "role": "corresponding"
+      },
+      {
+        "name": "Feng Tian"
+      }
+    ],
+    "venues": [
+      {
+        "name": "Work In Progress",
+        "type": "work-in-progress"
+      }
+    ],
+    "links": [],
+    "tags": [
+      "Framework / Survey",
+      "Human-Robot Collaboration",
+      "Embodied Interaction"
+    ],
+    "abstract": "Teleoperation extends human sensing and action into remote environments and is increasingly shifting from direct control toward broader human-robot collaboration. As robotic autonomy and immersive interfaces advance, evaluation must consider both task performance and operators' perceptions and experiences. Scale-based subjective evaluation captures these human-centered aspects, yet its constructs and measures remain fragmented across contexts. We conducted a scoping review of empirical teleoperation research published in 2016–2025. From 1,297 records, we included 187 publications reporting 196 studies and 661 study–construct–measure records. We consolidated reported constructs into 13 categories and mapped their distribution across tasks, interfaces, and experimental factors. Evaluation centered on workload, usability, and perceived performance, while less frequently studied constructs were often measured with custom instruments. The comparable use of standardized and custom measures indicates limited consensus and context-dependent operationalization. We provide evidence and construct maps and recommend transparent reporting and shared measurement resources to support comparable, cumulative teleoperation research."
+  },
+  {
+    "id": "delegated-access",
+    "title": "Delegated Access: When Artifacts Come to the Visitor in Agent-Native VR Museums",
+    "image": paperDelegatedAccess,
+    "authors": [
+      {
+        "name": "Qingxuan Yan"
+      },
+      {
+        "name": "Chenyu Du"
+      },
+      {
+        "name": "Shuran Fan"
+      },
+      {
+        "name": "Xueqi Wang"
+      },
+      {
+        "name": "Yue Li",
+        "role": "corresponding"
+      }
+    ],
+    "venues": [
+      {
+        "name": "Work In Progress",
+        "type": "work-in-progress"
+      }
+    ],
+    "links": [],
+    "tags": [
+      "Interaction Technology",
+      "System / Prototype"
+    ],
+    "abstract": "In a physical museum, being guided has always been optional; crossing the distance to each artifact is not. Virtual museums inherit this convention: artifacts stay fixed while visitors do the traveling. We ask whether a meaningful museum visit survives when the visitor stays still and the collection comes to them, and, once it does, who should compose what arrives. We study the question as delegated access, crossing access mode (authored-gallery travel versus carousel-mediated collection delivery) with visit guidance (self versus agent) in an agent-native replica of the Anonymized Museum: an LLM-driven embodied agent understands what the visitor means, can plan and arrange the visit, and interprets whatever they encounter, in every condition. In a 2 x 2 within-participant study (N=36), delivery lowered physical demand and enabled broader artifact encounters. Agent guidance reduced perceived visit agency, though proposals that could be refused and revised preserved a sense of authorship for some visitors. This work contributes a delegated-access design space for immersive 3D collection interfaces, an agent-native museum implementation that makes the comparison possible, and empirical evidence about the tradeoffs of the four conditions."
   },
 ];
 
